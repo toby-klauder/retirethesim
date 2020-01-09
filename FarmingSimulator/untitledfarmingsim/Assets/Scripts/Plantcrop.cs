@@ -21,7 +21,7 @@ public class Plantcrop : MonoBehaviour
     void OnMouseDown()
     {
         if (!hascrop) {
-            Instantiate(wheat);
+            Instantiate(wheat, transform.position, transform.rotation);
             hascrop = true; 
         }
         
