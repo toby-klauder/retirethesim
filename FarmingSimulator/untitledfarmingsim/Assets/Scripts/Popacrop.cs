@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pickuptool : MonoBehaviour
+public class Popacrop : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +17,10 @@ public class pickuptool : MonoBehaviour
         
     }
 
-    public void OnClick(string tooltoequip) {
-        Gamemanager.hand = tooltoequip;
-        Debug.Log(Gamemanager.hand); 
+    public void OnMouseDown() {
+       
+        if (Gamemanager.hand == "scythe") {
+            Destroy(gameObject); 
+        }
     }
 }
