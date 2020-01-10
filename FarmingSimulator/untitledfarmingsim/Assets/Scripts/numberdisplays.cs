@@ -28,11 +28,23 @@ public class numberdisplays : MonoBehaviour
         if (type == "corn") {
             numberdisplay.text = Gamemanager.seed_corn.ToString(); 
         }
+        if (type == "carrot") {
+            numberdisplay.text = Gamemanager.seed_carrot.ToString(); 
+        }
         if (type == "wheatsilo") {
             numberdisplay.text = "Wheat: " + Gamemanager.wheat.ToString(); 
         }
         if (type == "potatosilo") {
             numberdisplay.text = "Potato: " + Gamemanager.potato.ToString(); 
+        }
+        if (type == "barleysilo") {
+            numberdisplay.text = "Barley: " + Gamemanager.barley.ToString(); 
+        }
+        if (type == "cornsilo") {
+            numberdisplay.text = "Corn: " + Gamemanager.corn.ToString(); 
+        }
+        if (type == "carrotsilo") {
+            numberdisplay.text = "Carrot: " + Gamemanager.carrot.ToString(); 
         }
     }
 }

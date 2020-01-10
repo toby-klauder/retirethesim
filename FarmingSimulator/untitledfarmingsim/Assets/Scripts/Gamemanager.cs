@@ -5,14 +5,14 @@ using UnityEngine;
 public class Gamemanager : MonoBehaviour
 {
     public static int wheat;
-    public static int money;
+    public static int money = 100;
     public static int barley;
     public static int corn;
     public static int potato;
     public static int carrot;
     public static int seed_wheat = 10;
     public static int seed_barley;
-    public static int seed_corn;
+    public static int seed_corn = 5;
     public static int seed_potato;
     public static int seed_carrot;  
     public static string hand = "none";
