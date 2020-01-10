@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class pickuptool : MonoBehaviour
+using UnityEngine.UI; 
+public class numberdisplays : MonoBehaviour
 {
+    public Text numberdisplay;
+    public string type; 
     // Start is called before the first frame update
     void Start()
     {
@@ -13,12 +15,9 @@ public class pickuptool : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void OnClick(string tooltoequip) {
-        Gamemanager.hand = tooltoequip;
-        Debug.Log(Gamemanager.hand);
-        Texttime.lastactiontext = "Equipped: " + tooltoequip;
+        if(type == "wheat")
+        {
+            numberdisplay.text = Gamemanager.seed_wheat.ToString(); 
+        }
     }
 }
