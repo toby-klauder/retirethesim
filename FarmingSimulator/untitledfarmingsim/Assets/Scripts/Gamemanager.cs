@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Gamemanager : MonoBehaviour
 {
-
     public static int wheat;
     public static int money;
     public static int barley;
@@ -48,7 +47,7 @@ public class Gamemanager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     // Update is called once per frame

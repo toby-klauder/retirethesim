@@ -9,25 +9,24 @@ public class timecontrol : MonoBehaviour
     public Sprite stagetwo;
     public Sprite stagefinal;
     public double growtime;
-    public static SpriteRenderer swaprender; 
     // Start is called before the first frame update
     void Start()
     {
-        swaprender = GetComponent<SpriteRenderer>(); 
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (swaprender.sprite == stageone) {
+        if (GetComponent<SpriteRenderer>().sprite == stageone || GetComponent<SpriteRenderer>().sprite == stagetwo) {
             growtime += Time.deltaTime; 
         }
         //grow
         if (growtime > 15) {
-            swaprender.sprite = stagetwo; 
+            GetComponent<SpriteRenderer>().sprite = stagetwo; 
         }
         if (growtime > 30) {
-            swaprender.sprite = stagefinal; 
+            GetComponent<SpriteRenderer>().sprite = stagefinal; 
         }
     }
 }
