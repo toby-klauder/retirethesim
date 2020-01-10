@@ -95,3 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheat: {fileID: 213880122394622769, guid: 12c6990dfc44ec247a942ae07c19a86e, type: 3}
+  corn: {fileID: 4055510442076474593, guid: 52d88a835975d364e83e21a3de6da876, type: 3}
+  hascrop: 0
+  brb: {x: 0, y: 0, z: 0}

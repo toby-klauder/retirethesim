@@ -29,4 +29,9 @@ public class timecontrol : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = stagefinal; 
         }
     }
+
+    public void OnMouseDown()
+    {
+      
+    }
 }

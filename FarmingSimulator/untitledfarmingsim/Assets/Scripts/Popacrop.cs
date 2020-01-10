@@ -26,13 +26,20 @@ public class Popacrop : MonoBehaviour
             if (Gamemanager.hand == "scythe")
             {
                 Destroy(gameObject);
-               
+                chance = nextnum.Next(3);
+                gemchance = nextnum.Next(50);
+                print("chance happened: " + chance.ToString());
                 if (chance == 0)
                 {
-                Texttime.lastactiontext = "harvested 3 crops";
+                    Texttime.lastactiontext = "harvested 3 crops";
                     if (gameObject.tag == "wheat")
                     {
+                        print(chance.ToString() + "3 wheat");
                         Gamemanager.wheat += 3;
+                    }
+                    if (gameObject.tag == "corn") {
+                    print(chance.ToString() + "3 corn");
+                    Gamemanager.corn += 3; 
                     }
 
                 }
@@ -41,16 +48,25 @@ public class Popacrop : MonoBehaviour
                 Texttime.lastactiontext = "harvested 2 crops"; 
                 if (gameObject.tag == "wheat")
                     {
-
-                        Gamemanager.wheat += 2;
+                    print(chance.ToString() + "2 wheat");
+                    Gamemanager.wheat += 2;
                     }
+                if (gameObject.tag == "corn") {
+                    print(chance.ToString() + "2 corn");
+                    Gamemanager.corn += 2; 
+                }
                 }
                 else if (chance == 2)
                 {
                 Texttime.lastactiontext = "harvested a crop"; 
                     if (gameObject.tag == "wheat")
                     {
-                        Gamemanager.wheat += 1;
+                    print(chance.ToString() + "1 wheat");
+                    Gamemanager.wheat += 1;
+                    }
+                    if (gameObject.tag == "corn") {
+                    print(chance.ToString() + " corn");
+                    Gamemanager.corn += 1; 
                     }
 
                 }
