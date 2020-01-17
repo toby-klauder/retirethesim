@@ -202,7 +202,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 84134299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: sell
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: corn
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &84134299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +422,7 @@ GameObject:
   - component: {fileID: 158518430}
   - component: {fileID: 158518429}
   m_Layer: 5
-  m_Name: Wheat Button
+  m_Name: Wheat Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -580,6 +591,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt: {fileID: 200354971}
+  wheatBuyCost: 10
+  wheatSellCost: 8
+  barleyBuyCost: 100
+  barleySellCost: 80
+  cornBuyCost: 1000
+  cornSellCost: 800
+  potatoBuyCost: 10000
+  potatoSellCost: 8000
+  carrotBuyCost: 100000
+  carrotSellCost: 80000
 --- !u!1 &277674725
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,8 +833,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306369720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.38, y: -4.09, z: 0}
-  m_LocalScale: {x: 0.34835446, y: 0.34835446, z: 0.34835446}
+  m_LocalPosition: {x: -3.42, y: -4.41, z: 0}
+  m_LocalScale: {x: 0.19473015, y: 0.19473015, z: 0.19473015}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -893,8 +914,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354539682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.622, y: -3.964, z: 0}
-  m_LocalScale: {x: 0.62190634, y: 0.62190634, z: 0.62190634}
+  m_LocalPosition: {x: -6.08, y: -4.35, z: 0}
+  m_LocalScale: {x: 0.35137707, y: 0.35137707, z: 0.35137707}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -974,8 +995,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357431951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17, y: -4.069, z: 0}
-  m_LocalScale: {x: 0.35008126, y: 0.34518072, z: 0.30628282}
+  m_LocalPosition: {x: -0.66, y: -4.38, z: 0}
+  m_LocalScale: {x: 0.19625416, y: 0.19656421, z: 0.15957336}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -1061,7 +1082,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 368472575}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: sell
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: carrot
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &368472575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1277,7 +1309,6 @@ GameObject:
   - component: {fileID: 512878396}
   - component: {fileID: 512878395}
   - component: {fileID: 512878394}
-  - component: {fileID: 512878398}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1389,19 +1420,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &512878398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512878393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ca36a7b255d6847b02d85c12e9a5d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txt: {fileID: 0}
 --- !u!1 &515619150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,8 +1495,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 515619150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4, y: -3.934, z: 0}
-  m_LocalScale: {x: 0.945, y: 0.945, z: 0.945}
+  m_LocalPosition: {x: -1.95, y: -4.38, z: 0}
+  m_LocalScale: {x: 0.52731, y: 0.52731, z: 0.52731}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1646,13 +1664,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 200354973}
         m_MethodName: sell
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 80
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: barley
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &664205387
@@ -1703,7 +1721,7 @@ GameObject:
   - component: {fileID: 669464842}
   - component: {fileID: 669464841}
   m_Layer: 5
-  m_Name: Potato Button
+  m_Name: Potato Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2161,7 +2179,7 @@ GameObject:
   - component: {fileID: 926294811}
   - component: {fileID: 926294810}
   m_Layer: 5
-  m_Name: Barley Button
+  m_Name: Barley Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2420,7 +2438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1116385365}
   - component: {fileID: 1116385364}
-  - component: {fileID: 1116385366}
   m_Layer: 0
   m_Name: WoodSign2
   m_TagString: Untagged
@@ -2492,19 +2509,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1116385366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116385363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ca36a7b255d6847b02d85c12e9a5d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txt: {fileID: 0}
 --- !u!1 &1132315649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,7 +2598,7 @@ GameObject:
   - component: {fileID: 1216068614}
   - component: {fileID: 1216068613}
   m_Layer: 5
-  m_Name: Carrot Button
+  m_Name: Carrot Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2745,7 +2749,7 @@ GameObject:
   - component: {fileID: 1283802803}
   - component: {fileID: 1283802802}
   m_Layer: 5
-  m_Name: Corn Button
+  m_Name: Corn Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2999,13 +3003,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 200354973}
         m_MethodName: sell
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: wheat
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1466650202
@@ -3055,7 +3059,6 @@ GameObject:
   - component: {fileID: 1480820182}
   - component: {fileID: 1480820181}
   - component: {fileID: 1480820180}
-  - component: {fileID: 1480820183}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3111,19 +3114,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1480820183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1480820179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ca36a7b255d6847b02d85c12e9a5d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txt: {fileID: 0}
 --- !u!1 &1489634502
 GameObject:
   m_ObjectHideFlags: 0
@@ -3205,7 +3195,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1489634505}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: purchase
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: carrot
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1489634505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3681,13 +3682,13 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 200354973}
         m_MethodName: purchase
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 100
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: barley
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1553208647
@@ -3979,7 +3980,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1631568170}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: sell
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: potato
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1631568170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4098,15 +4110,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 200354968}
-        m_MethodName: 
-        m_Mode: 3
+      - m_Target: {fileID: 200354973}
+        m_MethodName: purchase
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 10
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: wheat
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1657061174
@@ -4729,7 +4741,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1918492765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: purchase
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: potato
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1918492765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4940,7 +4963,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1972147020}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 200354973}
+        m_MethodName: purchase
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: corn
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1972147020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5210,8 +5244,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997560127}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.01, y: -3.81, z: 0}
-  m_LocalScale: {x: 0.52101445, y: 0.52101445, z: 0.52101445}
+  m_LocalPosition: {x: -4.75, y: -4.22, z: 0}
+  m_LocalScale: {x: 0.3105246, y: 0.3105246, z: 0.3105246}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
