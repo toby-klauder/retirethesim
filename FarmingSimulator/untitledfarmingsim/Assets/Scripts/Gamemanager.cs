@@ -11,10 +11,10 @@ public class Gamemanager : MonoBehaviour
     public static int potato;
     public static int carrot;
     public static int seed_wheat = 10;
-    public static int seed_barley;
+    public static int seed_barley = 5;
     public static int seed_corn = 5;
-    public static int seed_potato;
-    public static int seed_carrot;  
+    public static int seed_potato = 5;
+    public static int seed_carrot = 5;  
     public static string hand = "none";
 
     private static Gamemanager _instance;

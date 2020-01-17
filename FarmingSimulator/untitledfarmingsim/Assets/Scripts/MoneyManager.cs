@@ -31,6 +31,7 @@ public class MoneyManager : MonoBehaviour
 
     public void purchase(string crop)
     {
+<<<<<<< HEAD
             if (crop.Equals("wheat") && Gamemanager.money >= wheatBuyCost)
             {
                 Gamemanager.seed_wheat += 1;
@@ -57,6 +58,12 @@ public class MoneyManager : MonoBehaviour
                 Gamemanager.money -= carrotBuyCost;
             }
         
+=======
+        if(Gamemanager.money >= cost)
+        {
+            Gamemanager.money -= cost;
+        }
+>>>>>>> 69c97bf564617df02ae3c3bd9a3a197a411e58be
       
     }
 
