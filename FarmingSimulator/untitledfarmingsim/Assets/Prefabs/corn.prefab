@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4055510442076474593}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.274, y: -2.853, z: 0}
-  m_LocalScale: {x: 0.35975808, y: 0.65, z: 1}
+  m_LocalScale: {x: 5, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,8 +72,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 843bcbd9858d1314298f69f83b70b088, type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: -6812683105161507844, guid: 447fa9324f8f62b44a4ac91503c9ba25,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,10 +109,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf244b9c3da88f040a6fa1fd004f9e66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageone: {fileID: 21300000, guid: 843bcbd9858d1314298f69f83b70b088, type: 3}
-  stagetwo: {fileID: 21300000, guid: 30df3b997cf8641449af1921c60e4d26, type: 3}
-  stagefinal: {fileID: 21300000, guid: 2a788cf8f94424940bc7822f52b19cf9, type: 3}
+  stageone: {fileID: -6812683105161507844, guid: 447fa9324f8f62b44a4ac91503c9ba25,
+    type: 3}
+  stagetwo: {fileID: -4713957164413193925, guid: 447fa9324f8f62b44a4ac91503c9ba25,
+    type: 3}
+  stagefinal: {fileID: 1444553092138730863, guid: 447fa9324f8f62b44a4ac91503c9ba25,
+    type: 3}
   growtime: 0
+  growthfactor: 0
+  usebucket: 0
 --- !u!65 &9134791200493777605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -123,5 +129,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.25, y: 8.584609, z: 0.2}
-  m_Center: {x: 0, y: 3.1673038, z: 0}
+  m_Size: {x: 0.20110594, y: 0.23035108, z: 0.2}
+  m_Center: {x: 0.0019156933, y: 0.022929883, z: 0}

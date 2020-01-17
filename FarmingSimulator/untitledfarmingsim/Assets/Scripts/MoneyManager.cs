@@ -23,7 +23,6 @@ public class MoneyManager : MonoBehaviour
         if(Gamemanager.money >= cost)
         {
             Gamemanager.money -= cost;
-            Gamemanager.
         }
       
     }

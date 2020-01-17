@@ -96,5 +96,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wheat: {fileID: 213880122394622769, guid: 12c6990dfc44ec247a942ae07c19a86e, type: 3}
   corn: {fileID: 4055510442076474593, guid: 52d88a835975d364e83e21a3de6da876, type: 3}
+  potato: {fileID: 0}
+  barley: {fileID: 798678688249805491, guid: 7aad65b74f42bbd49854541be570fbc5, type: 3}
+  carrot: {fileID: 0}
   hascrop: 0
   brb: {x: 0, y: 0, z: 0}
+  brbb: {x: 0, y: 0, z: 0}

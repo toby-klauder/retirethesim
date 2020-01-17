@@ -44,7 +44,7 @@ public class numberdisplays : MonoBehaviour
             numberdisplay.text = "Corn: " + Gamemanager.corn.ToString(); 
         }
         if (type == "carrotsilo") {
-            numberdisplay.text = "Carrot: " + Gamemanager.carrot.ToString(); 
+            numberdisplay.text = "Strawberry: " + Gamemanager.carrot.ToString(); 
         }
     }
 }

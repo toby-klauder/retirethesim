@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class boxwater : MonoBehaviour
 {
     public Sprite fullbucket;
+    public Sprite notfullbucket; 
     public Button waterbucket;
     public Text watertimer;
     public double time;
@@ -19,6 +20,12 @@ public class boxwater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timecontrol.goddamntheyusedthebucket) {
+            waterbucket.GetComponent<Image>().sprite = notfullbucket;
+            enableuse = false;
+            time = 0; 
+        }
+
         if(Input.GetKeyDown(KeyCode.Q))
         {
             runtimer = true;
@@ -38,6 +45,16 @@ public class boxwater : MonoBehaviour
 
         if (120 - time > 0) {
             watertimer.text = "bucket full in : " + ((int)(120 - time)).ToString() + " seconds.";
+        }
+    }
+
+    public void OnMouseDown()
+    {
+        if (waterbucket.GetComponent<Image>().sprite == notfullbucket) {
+            Gamemanager.hand = "water bucket"; 
+        }
+        if (waterbucket.GetComponent<Image>().sprite == fullbucket) {
+            Gamemanager.hand = "water bucket full"; 
         }
     }
 }

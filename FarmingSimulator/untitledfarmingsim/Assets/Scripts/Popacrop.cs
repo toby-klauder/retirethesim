@@ -38,9 +38,18 @@ public class Popacrop : MonoBehaviour
                         Gamemanager.wheat += 3;
                     }
                     if (gameObject.tag == "corn") {
-                    print(chance.ToString() + "3 corn");
-                    Gamemanager.corn += 3; 
+                        print(chance.ToString() + "3 corn");
+                        Gamemanager.corn += 3; 
                     }
+                    if (gameObject.tag == "barley") {
+                        Gamemanager.barley += 3; 
+                    }
+                    if (gameObject.tag == "potato") {
+                        Gamemanager.potato += 3; 
+                    }
+                if (gameObject.tag == "carrot") {
+                    Gamemanager.carrot += 3; 
+                }
 
                 }
                 else if (chance == 1)
@@ -55,6 +64,15 @@ public class Popacrop : MonoBehaviour
                     print(chance.ToString() + "2 corn");
                     Gamemanager.corn += 2; 
                 }
+                if (gameObject.tag == "barley") {
+                    Gamemanager.barley += 2; 
+                }
+                if (gameObject.tag == "potato") {
+                    Gamemanager.potato += 2; 
+                }
+                if (gameObject.tag == "carrot") {
+                    Gamemanager.carrot += 2;
+                }
                 }
                 else if (chance == 2)
                 {
@@ -68,7 +86,15 @@ public class Popacrop : MonoBehaviour
                     print(chance.ToString() + " corn");
                     Gamemanager.corn += 1; 
                     }
-
+                if (gameObject.tag == "barley") {
+                    Gamemanager.barley += 1; 
+                }
+                if (gameObject.tag == "potato") {
+                    Gamemanager.potato += 1; 
+                }
+                if (gameObject.tag == "carrot") {
+                    Gamemanager.carrot += 1; 
+                }
                 }
 
                 if (gemchance == 0)
