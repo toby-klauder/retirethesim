@@ -46,5 +46,44 @@ public class numberdisplays : MonoBehaviour
         if (type == "carrotsilo") {
             numberdisplay.text = "Strawberry: " + Gamemanager.carrot.ToString(); 
         }
+        if (type == "wheatseed") {
+            numberdisplay.text = Gamemanager.seed_wheat.ToString();
+        }
+        if (type == "barleyseed")
+        {
+            numberdisplay.text = Gamemanager.seed_barley.ToString();
+        }
+        if (type == "cornseed")
+        {
+            numberdisplay.text = Gamemanager.seed_corn.ToString();
+        }
+        if (type == "potatoseed")
+        {
+            numberdisplay.text = Gamemanager.seed_potato.ToString();
+        }
+        if (type == "carrotseed")
+        {
+            numberdisplay.text = Gamemanager.seed_carrot.ToString();
+        }
+        if (type == "wheatstore")
+        {
+            numberdisplay.text = Gamemanager.wheat.ToString();
+        }
+        if (type == "barleystore")
+        {
+            numberdisplay.text = Gamemanager.barley.ToString();
+        }
+        if (type == "cornstore")
+        {
+            numberdisplay.text = Gamemanager.corn.ToString();
+        }
+        if (type == "potatostore")
+        {
+            numberdisplay.text = Gamemanager.potato.ToString();
+        }
+        if (type == "carrotstore")
+        {
+            numberdisplay.text = Gamemanager.carrot.ToString();
+        }
     }
 }
