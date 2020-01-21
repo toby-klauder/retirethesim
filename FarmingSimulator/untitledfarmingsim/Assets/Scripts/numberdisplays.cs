@@ -1,4 +1,14 @@
-﻿using System.Collections;
+﻿/* numberdisplays.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20 
+ * Description: handles UI elements within the context of the main game
+ * 
+ * */
+
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
