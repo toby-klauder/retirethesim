@@ -16,7 +16,7 @@ public class Gamemanager : MonoBehaviour
     public static int seed_potato = 5;
     public static int seed_carrot = 5;  
     public static string hand = "none";
-
+    internal static string lastactiontext;
     private static Gamemanager _instance;
 
     public static Gamemanager instance

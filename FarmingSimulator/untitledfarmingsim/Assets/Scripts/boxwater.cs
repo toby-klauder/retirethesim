@@ -36,15 +36,15 @@ public class boxwater : MonoBehaviour
             time += Time.deltaTime; 
         }
 
-        if (time > 120) {
+        if (time > 30) {
             waterbucket.GetComponent<Image>().sprite = fullbucket;
             enableuse = true;
             time = 0;
             runtimer = false; 
         }
 
-        if (120 - time > 0) {
-            watertimer.text = "bucket full in : " + ((int)(120 - time)).ToString() + " seconds.";
+        if (30 - time > 0) {
+            watertimer.text = "bucket full in : " + ((int)(30 - time)).ToString() + " seconds.";
         }
     }
 
