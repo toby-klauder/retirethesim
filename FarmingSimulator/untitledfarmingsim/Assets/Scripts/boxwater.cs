@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿/* 
+ * boxwater.cs
+ * Written by : Toby Klauder
+ * Last Edited : 1/21/20
+ * Description: using the water bucket, refilling the bucket and changing the bucket texture. 
+ * */
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 

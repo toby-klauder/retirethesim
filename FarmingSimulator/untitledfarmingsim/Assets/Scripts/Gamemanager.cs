@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/* Gamemanager.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: Handles all the stuff.
+ * */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,6 +60,8 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (money > 1000000) {
+            ChangeScene.changeSceneuni("Main Menu"); 
+        }
     }
 }

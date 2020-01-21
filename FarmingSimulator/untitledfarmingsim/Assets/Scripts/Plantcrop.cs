@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/* plantcrop.sc
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: low-key self explanitory
+ * */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

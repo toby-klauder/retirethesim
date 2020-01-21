@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/* pickuptool.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: equips the tools and packets of seeds for use to the hand slot in the Gamemanager
+ * */
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

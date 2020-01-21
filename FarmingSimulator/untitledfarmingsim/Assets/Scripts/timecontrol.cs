@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/* timecontrol.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: handles the time and how crops look as they are growing.
+ * */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

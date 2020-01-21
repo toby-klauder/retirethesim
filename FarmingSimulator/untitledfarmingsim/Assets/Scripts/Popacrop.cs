@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/* Popacrop.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: when crop is harvested, this runs and provides either money, dirt and crop(s)
+ * */
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

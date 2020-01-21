@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/* Texttime.cs
+ * Written by: Toby Klauder
+ * Last Edited: 1/21/20
+ * Description: handles changing the last action text
+ * */
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 

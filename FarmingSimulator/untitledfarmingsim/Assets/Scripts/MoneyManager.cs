@@ -1,4 +1,12 @@
-﻿using System.Collections;
+﻿/* MoneyManager.cs
+ * Written by: Adeline Braun
+ * Last Edited: 1/21/20
+ * Description: handles the precious green cash
+ * */
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
