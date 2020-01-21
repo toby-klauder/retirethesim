@@ -57,7 +57,6 @@ public class MoneyManager : MonoBehaviour
                 Gamemanager.seed_carrot += 1;
                 Gamemanager.money -= carrotBuyCost;
             }
-        Gamemanager.carrot += 10;
         return;
       
     }
