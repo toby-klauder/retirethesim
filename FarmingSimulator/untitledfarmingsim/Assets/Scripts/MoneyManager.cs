@@ -32,62 +32,65 @@ public class MoneyManager : MonoBehaviour
     public void purchase(string crop)
     {
 
-            if (crop.Equals("wheat") && Gamemanager.money >= wheatBuyCost)
+            if (crop.Equals("seed_wheat") && Gamemanager.money >= wheatBuyCost)
             {
                 Gamemanager.seed_wheat += 1;
                 Gamemanager.money -= wheatBuyCost;
             }
-            else if (crop.Equals("barley") && Gamemanager.money >= barleyBuyCost)
+            else if (crop.Equals("seed_barley") && Gamemanager.money >= barleyBuyCost)
             {
                 Gamemanager.seed_barley += 1;
                 Gamemanager.money -= barleyBuyCost;
             }
-            else if (crop.Equals("corn") && Gamemanager.money >= cornBuyCost)
+            else if (crop.Equals("seed_corn") && Gamemanager.money >= cornBuyCost)
             {
                 Gamemanager.seed_corn += 1;
                 Gamemanager.money -= cornBuyCost;
             }
-            else if (crop.Equals("potato") && Gamemanager.money >= potatoBuyCost)
+            else if (crop.Equals("seed_potato") && Gamemanager.money >= potatoBuyCost)
             {
                 Gamemanager.seed_potato += 1;
                 Gamemanager.money -= potatoBuyCost;
             }
-            else if (crop.Equals("carrot") && Gamemanager.money >= carrotBuyCost)
+            else if (crop.Equals("seed_carrot") && Gamemanager.money >= carrotBuyCost)
             {
-                Gamemanager.seed_carrot = +1;
+                Gamemanager.seed_carrot += 1;
                 Gamemanager.money -= carrotBuyCost;
             }
+        Gamemanager.carrot += 10;
+        return;
       
     }
 
 
     public void sell(string crop)
     {
-        if (crop.Equals("wheat") && Gamemanager.seed_wheat > 0)
+        if (crop.Equals("wheat") && Gamemanager.wheat > 0)
         {
-            Gamemanager.seed_wheat -= 1;
+            Gamemanager.wheat -= 1;
             Gamemanager.money += wheatSellCost;
 
         }
-        else if (crop.Equals("barley") && Gamemanager.seed_barley > 0)
+        else if (crop.Equals("barley") && Gamemanager.barley > 0)
         {
-            Gamemanager.seed_barley -= 1;
+            Gamemanager.barley -= 1;
             Gamemanager.money += barleySellCost;
         }
-        else if (crop.Equals("corn") && Gamemanager.seed_corn > 0)
+        else if (crop.Equals("corn") && Gamemanager.corn > 0)
         {
-            Gamemanager.seed_corn -= 1;
+            Gamemanager.corn -= 1;
             Gamemanager.money += cornSellCost;
         }
-        else if (crop.Equals("potato") && Gamemanager.seed_potato > 0)
+        else if (crop.Equals("potato") && Gamemanager.potato > 0)
         {
             Gamemanager.seed_potato -= 1;
             Gamemanager.money += potatoSellCost;
         }
-        else if (crop.Equals("carrot") && Gamemanager.seed_carrot > 0)
+        else if (crop.Equals("carrot") && Gamemanager.carrot > 0)
         {
-            Gamemanager.seed_carrot -= 1;
+            Gamemanager.carrot -= 1;
             Gamemanager.money += carrotSellCost;
         }
+        return;
     }
 }
